@@ -17,8 +17,11 @@ import ReactDOM from 'react-dom';
 import Button from '@mui/material/Button';
 import AnimationIcon from '@mui/icons-material/Animation';
 import FingerprintIcon from '@mui/icons-material/Fingerprint';
-import PolylineIcon from '@mui/icons-material/Polyline';
+import {FcBusinessman} from 'react-icons/fc';
 import AssessmentIcon from '@mui/icons-material/Assessment';
+import {FcOrgUnit} from 'react-icons/fc';
+
+import {FcAreaChart} from 'react-icons/fc';
 
 const theme = createMuiTheme({
   palette: {
@@ -100,20 +103,18 @@ function App() {
           </Typography>
           <Typography> </Typography>
           <Typography> </Typography>
-                    <Typography> </Typography>
-           <h1  style={{ backgroundImage: "linear-gradient(to right, red, blue)", fontFamily:1, fontSize:78, marginTop:45, marginBottom:0, color:"transparent",WebkitBackgroundClip:"text", backgroundClip:"text", position:"relative", backgroundSize:"contain", width:"fit-content"}}>
-            dola </h1><Typography variant="h2" className={classes.wrapper}  color="primary">,
-          </Typography>
+           <h1  style={{ backgroundImage: "linear-gradient(to right, #533E85, #4FD3C4", fontFamily:1, fontSize:78, marginTop:45, marginBottom:0, color:"transparent",WebkitBackgroundClip:"text", backgroundClip:"text", position:"relative", backgroundSize:"contain", width:"fit-content"}}>
+            dola  </h1>
           <Typography variant="h5" className={classes.littleSpace} color="primary">
             Usaha mikro kelas menengah adalah istilah umum dalam dunia ekonomi yang merujuk kepada usaha ekonomi produktif yang dimiliki perorangan maupun badan usaha sesuai dengan kriteria yang ditetapkan oleh Undang-undang No. 20 tahun 2008.
 
-          </Typography>
-        </div>
+          </Typography>ß
+        </div>ß
         <div className={`${classes.grid} ${classes.bigSpace}`}>
-          <Grid icon={<FingerprintIcon style={{fill: "white", height:"100", width:"10rem"}}/>}   title="Keamanan Data Terjaga" />
-          <Grid icon={<PolylineIcon style={{fill: "white", height:"100", width:"10rem"}}/>}   title="Data Saling Terkoneksi" />
-          <Grid icon={<AppsRoundedIcon style={{fill: "white", height:"100", width:"10rem"}}/>} title="Dengan Panduan Praktisi Ahli" btnTitle="Show me More"/>
-          <Grid icon={<AssessmentIcon style={{fill: "white", height:"100", width:"10rem"}}/>}  title="Input Perkembangan Real Time" btnTitle="Show me More"/>
+          <Grid icon={<FingerprintIcon style={{fill: "white", height:"120", width:"10rem"}}/>}   title="Keamanan Data Terjaga" />
+          <Grid icon={<FcOrgUnit style={{fill: "white", height:"120", width:"10rem"}}/>}   title="Data Saling Terkoneksi" />
+          <Grid icon={<FcBusinessman style={{fill: "white", height:"120", width:"10rem"}}/>} title="Dengan Panduan Praktisi Ahli" btnTitle="Show me More"/>
+          <Grid icon={<FcAreaChart style={{fill: "white", height:"120", width:"10rem"}}/>}  title="Input Perkembangan Real Time" btnTitle="Show me More"/>
         </div>
 
         <div className={classes.bigSpace}>
